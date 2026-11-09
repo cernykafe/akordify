@@ -18,6 +18,14 @@
 </p>
 
 <p align="center">
+  <a href="https://akordify.cernykafe.com"><strong>▶&nbsp;Vyzkoušet na akordify.cernykafe.com</strong></a>
+  &nbsp;·&nbsp;
+  <a href="https://github.com/cernykafe/akordify/releases/latest/download/akordify.html">Stáhnout akordify.html</a>
+  &nbsp;·&nbsp;
+  <a href="docs/navod.md">Příručka</a>
+</p>
+
+<p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="docs/img/hlavni-tmavy.png">
     <img src="docs/img/hlavni-svetly.png" alt="Akordify: vlevo volba stylu a nálady, uprostřed vygenerovaná progrese s refrénem a slokou a sled bloků skladby, vpravo přehrávač se stopami a doladěním zvuku" width="900">
@@ -100,10 +108,13 @@
 
 Akordify je jediný HTML soubor. Nepotřebuje server, sestavení ani instalaci balíčků.
 
-**1. Samostatný soubor (nejrychlejší).**
+**1. Online (nejrychlejší).**
+Otevři **<https://akordify.cernykafe.com>**. Web si můžeš nainstalovat jako aplikaci: v Chrome a Edge ikonou instalace v adresním řádku, na iPhonu přes *Sdílet → Přidat na plochu*. Po prvním otevření funguje i bez připojení.
+
+**2. Samostatný soubor.**
 Stáhni [`akordify.html`](https://github.com/cernykafe/akordify/releases/latest/download/akordify.html) z posledního vydání a otevři ho dvojklikem. Funguje v jakémkoli moderním prohlížeči i bez internetu.
 
-**2. Lokálně z repozitáře, jako webová aplikace (PWA).**
+**3. Lokálně z repozitáře, jako webová aplikace (PWA).**
 
 ```bash
 git clone https://github.com/cernykafe/akordify.git
@@ -113,7 +124,7 @@ python3 -m http.server 8000 --directory public
 
 Pak otevři <http://localhost:8000>. Na `localhost` se zaregistruje i service worker, takže si aplikaci můžeš nainstalovat a zkusit práci bez připojení.
 
-**3. Na vlastní web.** Složka [`public/`](public) je připravená k nasazení na Cloudflare Pages i na jakýkoli statický hosting. Postup je v [docs/nasazeni.md](docs/nasazeni.md).
+**4. Na vlastní web.** Složka [`public/`](public) je připravená k nasazení na Cloudflare Pages i na jakýkoli statický hosting. Postup je v [docs/nasazeni.md](docs/nasazeni.md).
 
 ## Klávesové zkratky
 

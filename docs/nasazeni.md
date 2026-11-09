@@ -2,6 +2,8 @@
 
 Akordify je statický web. Stačí servírovat obsah složky [`public/`](../public) jako kořen webu. Server nic nepočítá, nepotřebuje databázi ani proměnné prostředí.
 
+**Produkční web:** <https://akordify.cernykafe.com> běží na Cloudflare Pages s vlastní doménou.
+
 - [Cloudflare Pages](#cloudflare-pages)
 - [Jiný statický hosting](#jiný-statický-hosting)
 - [Lokální spuštění](#lokální-spuštění)
@@ -147,4 +149,5 @@ Uživatelé novou verzi dostanou při dalším otevření. Navigace jde nejdří
 - [ ] *Application → Service Workers* ukazuje aktivní `sw.js` se správnou verzí.
 - [ ] Po přepnutí do režimu offline a obnovení se aplikace načte.
 - [ ] Odkaz na nápad (Export → Odkaz) se otevře v anonymním okně se stejným obsahem.
-- [ ] Hlavičky: `curl -I https://<doména>/` ukazuje `X-Content-Type-Options` a další.
+- [ ] Hlavičky: `curl -I https://akordify.cernykafe.com/` ukazuje `X-Content-Type-Options` a další.
+- [ ] Nasazená verze: `curl -s https://akordify.cernykafe.com/sw.js | grep VERSION` odpovídá `VERSION` v `public/sw.js`.
