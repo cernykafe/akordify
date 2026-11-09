@@ -1,5 +1,5 @@
 /* Akordify: práce bez připojení. Verzi doplňuje sestavení podle obsahu, ručně se nemění. */
-const VERSION = 'akordify-02773ffeb3';
+const VERSION = 'akordify-84c126e29f';
 const ASSETS = ['/', '/manifest.webmanifest', '/icons/icon-192.png', '/icons/icon-512.png', '/icons/icon-maskable-512.png',
   '/icons/apple-touch-icon.png', '/icons/favicon.svg', '/icons/favicon-32.png'];
 
